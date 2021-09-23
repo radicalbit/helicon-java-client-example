@@ -1,4 +1,4 @@
-#Helicon Java Sample App
+# Helicon Java Sample App
 This repository contains the files required to run the Helicon Java Quickstart.
 
 Helicon is a simple, scalable, robust, code-free and generic platform to enable and productise the next generation of "online modified", real-time event stream ML/AI models.
