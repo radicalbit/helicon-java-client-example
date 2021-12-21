@@ -68,8 +68,11 @@ You should see printed the response on the terminal.
 
 ## Change the API version
 
-You can switch between the project versions using `git checkout available_tag`. 
-You can refer to Helicon documentation for looking at API features.
+The main branch is always updated with the latest version of Helicon API.
+
+If you need to use an old version of the Helicon's API, you can switch between the project version using `git checkout tag_version`.
+
+You can refer to Helicon documentation for looking more in the depth over the version's features.
 
 ## Support
 We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.io).
