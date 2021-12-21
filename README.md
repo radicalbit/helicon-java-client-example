@@ -5,54 +5,7 @@ Helicon is a simple, scalable, robust, code-free and generic platform to enable 
 
 ## Set up the project
 
-This project uses a Helicon library, so you need to properly configure the `settings.xml` file located at `USER_HOME/.m2/`, adding the following code to be able to resolve the dependencies:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <profiles>
-        <profile>
-            <repositories>
-                <repository>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <id>central</id>
-                    <name>public-release</name>
-                    <url>https://tools.radicalbit.io/artifactory/public-release</url>
-                </repository>
-                <repository>
-                    <snapshots/>
-                    <id>snapshots</id>
-                    <name>public-snapshot</name>
-                    <url>https://tools.radicalbit.io/artifactory/public-snapshot</url>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <id>central</id>
-                    <name>public-release</name>
-                    <url>https://tools.radicalbit.io/artifactory/public-release</url>
-                </pluginRepository>
-                <pluginRepository>
-                    <snapshots/>
-                    <id>snapshots</id>
-                    <name>public-snapshot</name>
-                    <url>https://tools.radicalbit.io/artifactory/public-snapshot</url>
-                </pluginRepository>
-            </pluginRepositories>
-            <id>artifactory</id>
-        </profile>
-    </profiles>
-    <activeProfiles>
-        <activeProfile>artifactory</activeProfile>
-    </activeProfiles>
-</settings>
-```
-After that, you have to run `mvn clean install` to install the project and resolve the dependencies.
+Run `mvn clean install` to install the project and resolve the dependencies.
 
 ## Sample App
 ### Publish
@@ -112,6 +65,11 @@ Running the `HeliconSubscribeApp` class with your IDE or from a terminal includi
 To publish 1 message you can run the `HeliconPublishApp` class in the same way you have done before for `HeliconSubscribeApp`, or, for multiple messages, you can wrap it in a loop.
 
 You should see printed the response on the terminal.
+
+## Change the API version
+
+You can switch between the project versions using `git checkout available_tag`. 
+You can refer to Helicon documentation for looking at API features.
 
 ## Support
 We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.io).
