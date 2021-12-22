@@ -18,17 +18,16 @@ This code is available at `src/main/java/io/radicalbit/helicon/publish/HeliconPu
 ```
 to a specific stream
 ```java
-private static String authorizationServer = "<authorization-server-url>";
-private static String grpcHost = "<grpc-host>";
-private static int grpcPort = 0;
+private static String host = "<helicon-host>";
+private static int port = 443;
 private static String clientId = "<client-id>";
 private static String clientSecret = "<client-secret>";
-private static String tenant = "<tenant-name>";
+private static String tenant = "tenant-name";
 private static String streamName = "<stream_name>";
 
 public static void main(String[] args) {
 
-    HeliconPublishClient heliconClient = new HeliconPublishClient(authorizationServer, grpcHost, grpcPort, clientId, clientSecret, tenant);
+    HeliconPublishClient heliconClient = new HeliconPublishClient(host, port, clientId, clientSecret, tenant);
 
 String payload = "{\"temperature\": 26, \"timestamp\": " + System.currentTimeMillis() + "}";
 heliconClient.write(streamName, payload);
@@ -37,16 +36,15 @@ heliconClient.write(streamName, payload);
 ### Subscribe
 Same for subscription, the code is available at `src/main/java/io/radicalbit/helicon/subscribe/HeliconSubscribeApp.java`, and it is going to print the message defined above.
 ```java
-private static String authorizationServer = "<authorization-server-url>";
-private static String grpcHost = "<grpc-host>";
-private static int grpcPort = 0;
+private static String host = "<helicon-host>";
+private static int port = 443;
 private static String clientId = "<client-id>";
 private static String clientSecret = "<client-secret>";
-private static String tenant = "<tenant-name>";
+private static String tenant = "tenant-name";
 private static String streamName = "<stream_name>";
 
 public static void main(String[] args) {
-        HeliconSubscribeClient heliconClient = new HeliconSubscribeClient(authorizationServer, grpcHost, grpcPort, clientId, clientSecret, tenant);
+        HeliconSubscribeClient heliconClient = new HeliconSubscribeClient(host, port, clientId, clientSecret, tenant);
 
         heliconClient.subscribe(streamName, System.out::println);
         }

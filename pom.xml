@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>helicon-java-quickstart</artifactId>
-    <version>3.0.0</version>
+    <version>3.1.0</version>
 
     <repositories>
         <repository>
@@ -24,12 +24,12 @@
         <dependency>
             <groupId>io.radicalbit</groupId>
             <artifactId>helicon-java-api-publish</artifactId>
-            <version>3.0.0</version>
+            <version>3.1.0</version>
         </dependency>
         <dependency>
             <groupId>io.radicalbit</groupId>
             <artifactId>helicon-java-api-subscribe</artifactId>
-            <version>3.0.0</version>
+            <version>3.1.0</version>
         </dependency>
     </dependencies>
 
