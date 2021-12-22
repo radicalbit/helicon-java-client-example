@@ -23,7 +23,7 @@ private static int port = 443;
 private static String clientId = "<client-id>";
 private static String clientSecret = "<client-secret>";
 private static String tenant = "<tenant-name>";
-private static String streamName = "<stream_name>";
+private static String streamName = "<stream-name>";
 
 public static void main(String[] args) {
 
