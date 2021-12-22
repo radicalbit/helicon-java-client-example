@@ -9,7 +9,7 @@ public class HeliconSubscribeApp {
     private static String clientId = "<client-id>";
     private static String clientSecret = "<client-secret>";
     private static String tenant = "<tenant-name>";
-    private static String streamName = "<stream_name>";
+    private static String streamName = "<stream-name>";
 
     public static void main(String[] args) {
         HeliconSubscribeClient heliconClient = new HeliconSubscribeClient(host, port, clientId, clientSecret, tenant);
