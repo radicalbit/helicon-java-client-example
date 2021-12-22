@@ -26,11 +26,10 @@ private static String tenant = "<tenant-name>";
 private static String streamName = "<stream-name>";
 
 public static void main(String[] args) {
-
     HeliconPublishClient heliconClient = new HeliconPublishClient(host, port, clientId, clientSecret, tenant);
 
-String payload = "{\"temperature\": 26, \"timestamp\": " + System.currentTimeMillis() + "}";
-heliconClient.write(streamName, payload);
+    String payload = "{\"temperature\": 26, \"timestamp\": " + System.currentTimeMillis() + "}";
+    heliconClient.write(streamName, payload);
 }
 ```
 ### Subscribe
@@ -47,7 +46,7 @@ public static void main(String[] args) {
         HeliconSubscribeClient heliconClient = new HeliconSubscribeClient(host, port, clientId, clientSecret, tenant);
 
         heliconClient.subscribe(streamName, System.out::println);
-        }
+}
 ```
 To be able to read the data you are writing with the publishing client you need to subscribe to the same stream.
 The message received will be parsed as a GRPC response object before being processed from the response' callback consumer, `println` in this specific case.
