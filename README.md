@@ -1,7 +1,7 @@
-# Helicon Java Sample App
-This repository contains the files required to run the Helicon Java Quickstart.
+# Radicalbit Platform Java Sample App
+This repository contains the files required to run the Radicalbit Platform Java Quickstart.
 
-Helicon is a simple, scalable, robust, code-free and generic platform to enable and productise the next generation of "online modified", real-time event stream ML/AI models.
+The Radicalbit Platform is a simple, scalable, robust, code-free and generic platform to enable and productise the next generation of "online modified", real-time event stream ML/AI models.
 
 ## Set up the project
 
@@ -65,12 +65,12 @@ You should see printed the response on the terminal.
 
 ## Change the API version
 
-The main branch is always updated with the latest version of Helicon API.
+The main branch is always updated with the latest version of the Radicalbit Platform API.
 
-If you need to use an old version of the Helicon's API, you can switch between the project version using `git checkout tag_version`.
+If you need to use an old version of the Radicalbit Platform's API, you can switch between the project version using `git checkout tag_version`.
 
-You can refer to Helicon documentation for looking more in the depth over the version's features.
+You can refer to the Radicalbit Platform documentation for looking more in the depth over the version's features.
 
 ## Support
-We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.io).
+We're always happy to help with any other questions you might have! [Send us an email](mailto:support@radicalbit.ai).
  
